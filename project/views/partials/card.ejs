@@ -1,0 +1,32 @@
+<article class="card">
+
+    <img
+        src="<%= place.image %>"
+        alt="<%= place.title %>"
+        class="card-image"
+    >
+
+    <div class="card-content">
+
+        <p class="card-category">
+            <%= place.category %>
+        </p>
+
+        <h2>
+            <%= place.title %>
+        </h2>
+
+        <p class="card-description">
+            <%= place.description %>
+        </p>
+
+        <a
+            href="/place/<%= place.id %>"
+            class="card-button"
+        >
+            Подробнее →
+        </a>
+
+    </div>
+
+</article>

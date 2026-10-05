@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <%- include("partials/head") %>
+
+</head>
+
+<body>
+
+    <%- include("partials/header") %>
+
+
+    <main class="container">
+
+        <section class="error-page">
+
+            <div class="error-number">
+                404
+            </div>
+
+            <h1>
+                Страница не найдена
+            </h1>
+
+            <p>
+                <%= message %>
+            </p>
+
+            <a href="/" class="card-button">
+                Вернуться на главную
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <%- include("partials/footer", { year: 2026 }) %>
+
+</body>
+
+</html>

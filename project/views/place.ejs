@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <%- include("partials/head") %>
+
+</head>
+
+<body>
+
+    <%- include("partials/header") %>
+
+
+    <main class="container">
+
+        <article class="place-page">
+
+            <img
+                src="<%= place.image %>"
+                alt="<%= place.title %>"
+                class="place-image"
+            >
+
+
+            <div class="place-info">
+
+                <p class="card-category">
+                    <%= place.category %>
+                </p>
+
+                <h1>
+                    <%= place.title %>
+                </h1>
+
+                <p class="place-description">
+                    <%= place.description %>
+                </p>
+
+
+                <div class="place-details">
+
+                    <div>
+                        <strong>Год:</strong>
+                        <%= place.year %>
+                    </div>
+
+                    <div>
+                        <strong>Адрес:</strong>
+                        <%= place.address %>
+                    </div>
+
+                </div>
+
+
+                <a href="/" class="back-button">
+                    ← Вернуться к списку
+                </a>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <%- include("partials/footer", { year: 2026 }) %>
+
+</body>
+
+</html>

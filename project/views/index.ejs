@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <%- include("partials/head") %>
+
+</head>
+
+<body>
+
+    <%- include("partials/header") %>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container">
+
+                <p class="hero-label">
+                    TRAVEL GUIDE
+                </p>
+
+                <h1>
+                    Открой для себя Астану
+                </h1>
+
+                <p class="hero-text">
+                    Достопримечательности, архитектура,
+                    культура и интересные места столицы Казахстана.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="places">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Популярные места
+                </h2>
+
+
+                <% if (places.length === 0) { %>
+
+                    <div class="empty">
+
+                        <h3>
+                            Пока нет мест
+                        </h3>
+
+                        <p>
+                            Список достопримечательностей пока пуст.
+                        </p>
+
+                    </div>
+
+                <% } else { %>
+
+                    <p class="places-count">
+                        Найдено мест: <%= places.length %>
+                    </p>
+
+
+                    <div class="cards">
+
+                        <% places.forEach(function(place) { %>
+
+                            <%- include(
+                                "partials/card",
+                                { place: place }
+                            ) %>
+
+                        <% }); %>
+
+                    </div>
+
+                <% } %>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <%- include("partials/footer", { year: 2026 }) %>
+
+</body>
+
+</html>

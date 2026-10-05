@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    color: #15171a;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-inner {
+    width: min(1200px, 90%);
+    min-height: 75px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: #555;
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    color: #111;
+}
+
+
+/* HERO */
+
+.hero {
+    background: #15171a;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.hero h1 {
+    max-width: 750px;
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 650px;
+    font-size: 19px;
+    color: #cfcfcf;
+}
+
+
+/* PLACES */
+
+.places {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.places-count {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e5e5e5;
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-category {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.card h2 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.card-description {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-button,
+.back-button {
+    display: inline-block;
+    background: #15171a;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.card-button:hover,
+.back-button:hover {
+    background: #333;
+}
+
+
+/* PLACE */
+
+.place-page {
+    margin: 70px 0;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.place-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.place-info {
+    padding: 45px;
+}
+
+.place-info h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.place-description {
+    max-width: 800px;
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.place-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+
+/* ABOUT */
+
+.about {
+    max-width: 850px;
+    padding: 90px 0;
+}
+
+.about h1 {
+    font-size: 52px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.about-list div {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-list strong {
+    font-size: 30px;
+}
+
+
+/* EMPTY */
+
+.empty {
+    background: white;
+    border: 1px dashed #bbb;
+    border-radius: 15px;
+    padding: 60px;
+    text-align: center;
+}
+
+.empty h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+/* 404 */
+
+.error-page {
+    text-align: center;
+    padding: 120px 0;
+}
+
+.error-number {
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.error-page h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.error-page p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #15171a;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer-inner {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+
+    min-height: 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #aaa;
+}
+
+
+/* ADAPTIVE */
+
+@media (max-width: 800px) {
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-list {
+        grid-template-columns: 1fr;
+    }
+
+    .place-image {
+        height: 300px;
+    }
+
+    .place-info h1 {
+        font-size: 36px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .header-inner {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+
+}
