@@ -11,16 +11,42 @@ Astana Guide — многостраничный туристический са�
 • JSON
 ## 📄 Страницы
 project/
+
+
 ├──.gitignore
+
+
 ├──data.json
+
+
 ├── server.js
+
+
 └──views/
+
+
 ├── index.ejs
+
+
 ├── place.ejs
+
+
 ├── about.ejs
+
+
 ├── 404.ejs
+
+
 └── partials/
+
+
     ├── head.ejs
+
+
     ├── header.ejs
+
+
     ├── footer.ejs
+
+
     └── card.ejs
